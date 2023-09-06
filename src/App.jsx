@@ -3,6 +3,7 @@ import Imge0 from './imges/shoppingcard-apfel.jpg'
 import Imge1 from './imges/shoppingcard-kirsche.jpg'
 import Imge2 from './imges/shoppingcard-orange.jpg'
 import soldout from './imges/soldout.jpg'
+import Calc from './components/Calc.jsx'
 
 import { AiOutlineApple } from "react-icons/ai";
 import './App.css'
@@ -45,23 +46,23 @@ function App() {
   const cambiarTexto = (e) => {
     if (e.target.innerHTML == 'Kirschen') {
       e.target.innerHTML = e.target.innerHTML = ' ';
+      e.target.style.backgroundColor = "transpart"
     } else {
       e.target.innerHTML = 'Kirschen';
     }
   };
-
+  //change img 2 and make the image cont hidden
   const cambiarImagen = (e) => {
     if (e.target.src.includes("kirsche")) {
-      e.target.src =soldout;
+      e.target.src = soldout;
     }
     else {
-      e.target.src = '';
-      e.target.style.backgroundColor='transparent'
+      e.target.style.visibility = "hidden";
     }
   }
 
 
-  
+
 
   return (
     <>
@@ -85,7 +86,20 @@ function App() {
           <button>Comprar</button>
         </div>
       </div>
+
+
+      <div className='main'>
+        <section className='calc-cont'>
+
+          <Calc />
+        </section>
+
+      </div>
+
+
     </>
+
+
   )
 }
 
