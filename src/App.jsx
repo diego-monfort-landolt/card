@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import { AiOutlineApple } from "react-icons/ai";
 import Imge0 from './imges/shoppingcard-apfel.jpg'
 import Imge1 from './imges/shoppingcard-kirsche.jpg'
 import Imge2 from './imges/shoppingcard-orange.jpg'
@@ -6,8 +7,7 @@ import soldout from './imges/soldout.jpg'
 import Calc from './components/Calc.jsx'
 import Pruebas from './components/Pruebas'
 import Actividad from './components/Actividad'
-
-import { AiOutlineApple } from "react-icons/ai";
+import Fetsch from './components/Fetsch';
 import './App.css'
 
 function App() {
@@ -62,10 +62,6 @@ function App() {
       e.target.style.visibility = "hidden";
     }
   }
-
-
-
-
   return (
     <>
       <div className='header-container'>
@@ -96,6 +92,7 @@ function App() {
           <Calc />
           <Pruebas />
           <Actividad />
+          <Fetsch />
         </section>
 
         
@@ -104,8 +101,6 @@ function App() {
 
 
     </>
-
-
   )
 }
 
