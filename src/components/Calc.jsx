@@ -53,8 +53,6 @@ const Calc = () => {
         }
         setMensaje(<h2><span className='red'>{texte[cont].names} </span><span className='green'>{texte[cont].aficion}</span> </h2>);
     }
-
-
     return (
         <div>
             <div className='containerSection'>
@@ -63,7 +61,6 @@ const Calc = () => {
                 <button onClick={aumentar}>Aumentar</button>
                 <button onClick={disminuir}>Disminuir</button>
                 <button onClick={restablecer}>Restablecer</button>
-
             </div>
 
             <section className='sectioninput'>

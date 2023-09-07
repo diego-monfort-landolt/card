@@ -4,6 +4,8 @@ import Imge1 from './imges/shoppingcard-kirsche.jpg'
 import Imge2 from './imges/shoppingcard-orange.jpg'
 import soldout from './imges/soldout.jpg'
 import Calc from './components/Calc.jsx'
+import Pruebas from './components/Pruebas'
+import Actividad from './components/Actividad'
 
 import { AiOutlineApple } from "react-icons/ai";
 import './App.css'
@@ -92,7 +94,11 @@ function App() {
         <section className='calc-cont'>
 
           <Calc />
+          <Pruebas />
+          <Actividad />
         </section>
+
+        
 
       </div>
 
