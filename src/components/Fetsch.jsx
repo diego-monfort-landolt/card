@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import '../stylesheet/fetsch.css'
 
 const Fetsch = () => {
-    const [nombre,setNombre] = useState("")
+    const [nombre, setNombre] = useState("")
     const [imagen, setImagen] = useState("")
     useEffect(() => {
         //here we do peticion asincrona
@@ -11,12 +11,12 @@ const Fetsch = () => {
 
         peticion
             .then(datos => datos.json())
-            .then(lectura =>{
+            .then(lectura => {
                 setNombre(`${lectura.results[0].name.first} ${lectura.results[0].name.last}`)
                 setImagen(`${lectura.results[0].picture.large}`)
-            } )
+            })
             .catch(() => console.log("error Diego"))
-    },[])
+    }, [])
 
 
 
