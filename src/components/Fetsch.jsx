@@ -28,8 +28,6 @@ const Fetsch = () => {
         <>
             <div className='fetsch-header'>
                 <h2>Random People Refresh</h2>
-
-
                 {datos}
             </div>
 
