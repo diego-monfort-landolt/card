@@ -6,7 +6,7 @@ const Fetsch = () => {
 
 
     useEffect(() => {
-        const url = "https://randomuser.me/api/?results=2"
+        const url = "https://randomuser.me/api/?results=1"
         const peticion = fetch(url);
         peticion
             .then(datos => datos.json())
@@ -21,7 +21,7 @@ const Fetsch = () => {
                         </div>])
                 })
             })
-            .catch(console.log())
+            .catch(console.log)
     }, [])
 
     return (
