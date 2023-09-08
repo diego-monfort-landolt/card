@@ -23,7 +23,7 @@ const Fetsch = () => {
     return (
         <>
             <div className='fetsch-header'>
-                <h2>Random Peoplen</h2>
+                <h2>Random Peoplen Refresh Page</h2>
                 {nombre}
                 <div className='imgsection'>
                     <img src={imagen} />
